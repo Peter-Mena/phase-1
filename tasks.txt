@@ -6,3 +6,12 @@ task-two :Verify system details: kernel version, user, time.
 uname -r
 whoami
 timedatectl status
+
+task-three: Create Project Directory Structure
+mkdir /home/peter/iot_logger
+cd /home/peter/iot_logger
+mkdir logs
+mkdir scripts
+mkdir data
+cd ..
+tree iot_logger
