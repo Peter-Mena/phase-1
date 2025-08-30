@@ -1,0 +1,18 @@
+question-one: Draw or describe the Linux architecture layers (hardware → kernel → shell → user space). Where do system calls fit?
+User Space: Applications (e.g., Python scripts, web servers)
+Shell: Command-line interface (e.g., Bash,Dash)
+System Call: a way for a program to ask the kernel to do a function 
+Kernel: Core of OS (process, memory, device management)
+Hardware: CPU, RAM, GPIO, sensors, etc
+
+question-two: Explain the purpose of these directories: /, /bin, /sbin, /usr, /etc, /var.
+"/": the root directory and all other directories branch from here.
+"/bin": stores essential command-line programs needed for basic system operation.
+"/sbin": contains system administration commands used by root or sudo.
+"/user": A secondary directory tree for read-only user data like "application files" for the OS and Contains most non-essential (but still important) commands, libraries, and docs.
+"/etc": stores system-wide configuration files.
+"/var": holds files that change during system operation ("variable" data).
+
+question-three: Why does Linux treat everything as a file? Explain the difference between a program and a process.
+To provide a uniform interface to interact with almost all resources using file operations.
+the process is a running program while the program is just a code that didn't run yet
